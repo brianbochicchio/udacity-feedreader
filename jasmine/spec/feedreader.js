@@ -89,7 +89,7 @@ $(function() {
 
 
     });
-    describe('The menu', function() {
+    describe('Initial Entries', function() {
     /* TODO: Write a new test suite named "Initial Entries" */
 
         /* TODO: Write a test that ensures when the loadFeed
@@ -105,6 +105,6 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
-        
+
     });
 }());
