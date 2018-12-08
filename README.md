@@ -70,20 +70,21 @@ var allFeeds = [
 
 
 ### The Menu Test Suite
-This suite verifies the manu is hidden on startup and that it toggles state as expected. Menu visibility is controled by the class menu-hidden on the body tag.
+This suite verifies the menu is hidden on startup and that it toggles state as expected. Menu visibility is controled by the class "menu-hidden" on the body tag.
 
-####Test 1:  ensure the menu is hidden by default
-To validate this test remove menu-hidden from the body tag in index.html 
+#### Test 1:  ensure the menu is hidden by default
+To validate this test remove "menu-hidden" from the body tag in index.html 
 
 #### Test 2:  ensure the menu toggles state when clicked
-The menu is initally hidden.  The test clicks the menu and checks for the presence of the menu-hidden class.
+The menu is initally hidden.  This test "clicks" the menu. Then verifies the presence or lack of the "menu-hidden" class. 
+
+To validate the test remark the toggleClass call in app.js. 
 
 ````
     menuIcon.on('click', function() {
         //$('body').toggleClass('menu-hidden');
     });
 ````
-
 
 ### Initial Entries Test Suite
 This suite verifies the asynchronous loadFeed() fuction completes and that there is atleast one entry. This test is performed on the first entry in the allFeeds arrary. 
