@@ -5,7 +5,7 @@
 
 ## How to download and run this project
 
-To get a copy of the project either clone the repo using https://github.com/brianbochicchio/udacity-feedreader.git. Or download the zip file using the link proivded above and extract the project to a local folder. 
+To get a copy of the project either clone the repo using https://github.com/brianbochicchio/udacity-feedreader.git. Or download the zip file using the link provided above and extract the project to a local folder. 
 
 The starter code provided by Udacity contained everything needed to run the project. Open the index.html in the project folder to run it. 
 
@@ -76,7 +76,7 @@ This suite verifies the menu is hidden on startup and that it toggles state as e
 To validate this test remove "menu-hidden" from the body tag in index.html 
 
 #### Test 2:  ensure the menu toggles state when clicked
-The menu is initally hidden.  This test "clicks" the menu. Then verifies the presence or lack of the "menu-hidden" class. 
+The menu is initally hidden.  This test "clicks" the menu. Then verifies the presence or abscense of the "menu-hidden" class. 
 
 To validate the test remark the toggleClass call in app.js. 
 
@@ -89,8 +89,7 @@ To validate the test remark the toggleClass call in app.js.
 ### Initial Entries Test Suite
 This suite verifies the asynchronous loadFeed() fuction completes and that there is atleast one entry. This test is performed on the first entry in the allFeeds arrary. 
 
-To validate the test, update the name of the first element with an invalid URL like below.  Making it empty would trigger "must have a URL defined and not be empty" too.  Which is not what we are testing. 
-
+To validate the test, update the first element in "allFeeds" with an unusable feed URL like below. 
 
 ``` 
 var allFeeds = [
@@ -104,7 +103,7 @@ var allFeeds = [
 ### New Feed Selection Test Suite
 This suite verifies that when a new feed is loaded the content actually changes. 
 
-To validate the test, set the first two URLs in allFeeds to the same URL.  
+To validate the test, set the first two URLs in "allFeeds" to the same URL.  
 
 ````
 var allFeeds = [

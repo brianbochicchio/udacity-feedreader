@@ -102,7 +102,6 @@ $(function() {
          */
         it('content loaded successfully', function(){
             let theFeed = document.querySelector('.feed');
-            //console.log("Length: " +  theFeed.children.length);
             expect(theFeed.children.length > 0).toBe(true);            
             });
         });
