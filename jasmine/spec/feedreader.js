@@ -94,8 +94,8 @@ $(function() {
          * in the feed. See test notes in README for more information
          */
         it('content loaded successfully', function(){
-            let theFeed = document.querySelector('.feed');
-            expect(theFeed.children.length > 0).toBe(true);            
+            // Select the feed container and check for children by verifying there are links
+            expect(document.querySelector('.feed').querySelectorAll('.entry-link').length).toBeGreaterThan(0);               
             });
         });
 
