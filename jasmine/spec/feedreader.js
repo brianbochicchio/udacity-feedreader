@@ -116,9 +116,10 @@ $(function() {
         beforeEach(function(done){
                 loadFeed(0, function(){
                     feedOne = theFeed.children[0].innerText;
-                });
-                loadFeed(1, function(){
-                    done();
+                    loadFeed(1,function(){
+                        feedTwo = theFeed.children[0].innerText;
+                        done();
+                    });                
                 });
             });
 
@@ -127,6 +128,8 @@ $(function() {
          * we compare them to make sure there is a change. 
          */
         it('feed content changed', function(){
+            //console.log("Feed One: " + feedOne);
+            //console.log("Feed Two: " + feedTwo);
                 expect(feedOne === feedTwo).toBe(false);
             });
         });
